@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 const demos = [
   { href: "/BasicAnimated", label: "Basic Animated Box" },
   { href: "/ChangeSize", label: "Change Size" },
+  { href: "/ExpandingCircle", label: "Expanding Circle" },
 ];
 
 export default function Index() {

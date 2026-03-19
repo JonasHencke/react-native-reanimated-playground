@@ -1,7 +1,7 @@
 import { Button, View } from "react-native";
 import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
 
-export default function App() {
+export default function ChangeSize() {
   const width = useSharedValue(100);
 
   const handlePress = () => {
