@@ -5,6 +5,7 @@ const demos = [
   { href: "/BasicAnimated", label: "Basic Animated Box" },
   { href: "/ChangeSize", label: "Change Size" },
   { href: "/ExpandingCircle", label: "Expanding Circle" },
+  { href: "/LinearAnimation", label: "Linear Animation" },
 ];
 
 export default function Index() {
