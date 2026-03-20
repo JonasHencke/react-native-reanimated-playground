@@ -7,6 +7,7 @@ const demos = [
   { href: "/ExpandingCircle", label: "Expanding Circle" },
   { href: "/LinearAnimation", label: "Linear Animation" },
   { href: "/ShakeAnimation", label: "Shake Animation" },
+  { href: "/TapGesture", label: "Tap Gesture" },
 ];
 
 export default function Index() {
