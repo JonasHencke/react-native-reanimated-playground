@@ -8,6 +8,7 @@ const demos = [
   { href: "/LinearAnimation", label: "Linear Animation" },
   { href: "/ShakeAnimation", label: "Shake Animation" },
   { href: "/TapGesture", label: "Tap Gesture" },
+  { href: "/DragGesture", label: "Drag Gesture" },
 ];
 
 export default function Index() {
