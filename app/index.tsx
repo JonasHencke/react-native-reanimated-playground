@@ -10,6 +10,7 @@ const demos = [
   { href: "/TapGesture", label: "Tap Gesture" },
   { href: "/DragGesture", label: "Drag Gesture" },
   { href: "/DragAnimation", label: "Drag Animation" },
+  { href: "/GlowInput", label: "Glow Input" },
 ];
 
 export default function Index() {
