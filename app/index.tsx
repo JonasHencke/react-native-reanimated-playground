@@ -2,15 +2,15 @@ import { Link, Stack } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const demos = [
-  { href: "/BasicAnimated", label: "Basic Animated Box" },
-  { href: "/ChangeSize", label: "Change Size" },
-  { href: "/ExpandingCircle", label: "Expanding Circle" },
-  { href: "/LinearAnimation", label: "Linear Animation" },
-  { href: "/ShakeAnimation", label: "Shake Animation" },
-  { href: "/TapGesture", label: "Tap Gesture" },
-  { href: "/DragGesture", label: "Drag Gesture" },
-  { href: "/DragAnimation", label: "Drag Animation" },
-  { href: "/GlowInput", label: "Glow Input" },
+  { href: "/components/BasicAnimated", label: "Basic Animated Box" },
+  { href: "/components/ChangeSize", label: "Change Size" },
+  { href: "/components/ExpandingCircle", label: "Expanding Circle" },
+  { href: "/components/LinearAnimation", label: "Linear Animation" },
+  { href: "/components/ShakeAnimation", label: "Shake Animation" },
+  { href: "/components/TapGesture", label: "Tap Gesture" },
+  { href: "/components/DragGesture", label: "Drag Gesture" },
+  { href: "/components/DragAnimation", label: "Drag Animation" },
+  { href: "/components/GlowInput", label: "Glow Input" },
 ];
 
 export default function Index() {
