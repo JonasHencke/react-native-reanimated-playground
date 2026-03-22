@@ -11,6 +11,7 @@ const demos = [
   { href: "/components/DragGesture", label: "Drag Gesture" },
   { href: "/components/DragAnimation", label: "Drag Animation" },
   { href: "/components/GlowInput", label: "Glow Input" },
+  { href: "/components/FlipCard", label: "Flip Card" },
 ];
 
 export default function Index() {
