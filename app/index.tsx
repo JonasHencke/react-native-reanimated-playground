@@ -1,5 +1,5 @@
 import { Link, Stack } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 const demos = [
   { href: "/components/BasicAnimated", label: "Basic Animated Box" },
@@ -17,18 +17,20 @@ export default function Index() {
   return (
     <>
       <Stack.Screen options={{ title: "Hub" }} />
-      <View style={styles.container}>
-        <Text style={styles.title}>Reanimated Playground</Text>
-        <Text style={styles.subtitle}>Pick a demo screen</Text>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.title}>Reanimated Playground</Text>
+          <Text style={styles.subtitle}>Pick a demo screen</Text>
 
-        {demos.map((demo) => (
-          <Link key={demo.href} href={demo.href as any} asChild>
-            <Pressable style={styles.card}>
-              <Text style={styles.cardText}>{demo.label}</Text>
-            </Pressable>
-          </Link>
-        ))}
-      </View>
+          {demos.map((demo) => (
+            <Link key={demo.href} href={demo.href as any} asChild>
+              <Pressable style={styles.card}>
+                <Text style={styles.cardText}>{demo.label}</Text>
+              </Pressable>
+            </Link>
+          ))}
+        </View>
+      </ScrollView>
     </>
   );
 }
