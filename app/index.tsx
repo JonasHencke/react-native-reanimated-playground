@@ -13,6 +13,7 @@ const demos = [
   { href: "/components/GlowInput", label: "Glow Input" },
   { href: "/components/FlipCard", label: "Flip Card" },
   { href: "/components/FloatingActionButton", label: "Floating Action Button" },
+  { href: "/components/SkeletonPlaceholder", label: "Skeleton placeholder" },
 ];
 
 export default function Index() {
