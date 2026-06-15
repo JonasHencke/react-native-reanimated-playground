@@ -15,6 +15,7 @@ const demos = [
   { href: "/components/FloatingActionButton", label: "Floating Action Button" },
   { href: "/components/SkeletonPlaceholder", label: "Skeleton placeholder" },
   { href: "/components/ProgressBar", label: "Progress Bar" },
+  { href: "/components/stack-carousel/StackCarousel", label: "Stack Carousel" },
 ];
 
 export default function Index() {
