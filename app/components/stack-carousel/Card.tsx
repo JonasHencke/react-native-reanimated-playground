@@ -1,10 +1,5 @@
 import React from "react";
 import { ImageSourcePropType, StyleSheet } from "react-native";
-import {
-  Directions,
-  FlingGestureHandler,
-  State,
-} from "react-native-gesture-handler";
 import type { SharedValue } from "react-native-reanimated";
 import Animated, {
   interpolate,
@@ -42,21 +37,25 @@ const Card = ({
       [index - 1, index, index + 1],
       [-30, 1, 30]
     );
+
     const translateY2 = interpolate(
       animatedValue.value,
       [index - 1, index, index + 1],
       [-200, 1, 200]
     );
+
     const scale = interpolate(
       animatedValue.value,
       [index - 1, index, index + 1],
       [0.9, 1, 1.1]
     );
+
     const opacity = interpolate(
       animatedValue.value,
       [index - 1, index, index + 1],
       [1, 1, 0]
     );
+
     return {
       transform: [
         {
@@ -74,44 +73,18 @@ const Card = ({
   });
 
   return (
-    <FlingGestureHandler
-      key="up"
-      direction={Directions.UP}
-      onHandlerStateChange={(ev) => {
-        if (ev.nativeEvent.state === State.END) {
-          if (currentIndex.value !== 0) {
-            animatedValue.value = withTiming((currentIndex.value -= 1));
-            prevIndex.value = currentIndex.value - 1;
-          }
-        }
-      }}
-    >
-      <FlingGestureHandler
-        key="down"
-        direction={Directions.DOWN}
-        onHandlerStateChange={(ev) => {
-          if (ev.nativeEvent.state === State.END) {
-            if (currentIndex.value !== dataLength - 1) {
-              animatedValue.value = withTiming((currentIndex.value += 1));
-              prevIndex.value = currentIndex.value;
-            }
-          }
-        }}
-      >
-        <Animated.Image
-          source={item.image}
-          style={[
-            styles.image,
-            {
-              zIndex: dataLength - index,
-              width: IMAGE_WIDTH,
-              height: IMAGE_HEIGHT,
-            },
-            animatedStyle,
-          ]}
-        />
-      </FlingGestureHandler>
-    </FlingGestureHandler>
+    <Animated.Image
+      source={item.image}
+      style={[
+        styles.image,
+        {
+          zIndex: dataLength - index,
+          width: IMAGE_WIDTH,
+          height: IMAGE_HEIGHT,
+        },
+        animatedStyle,
+      ]}
+    />
   );
 };
 
